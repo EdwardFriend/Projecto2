@@ -5,7 +5,7 @@ package clases;
  *
  */
 public class Coordenada {
-	Vertice x;
+	private Vertice x;
 	public Coordenada() {
 		//Este es el constructor vacio de la clase
 		x=new Vertice();
@@ -14,6 +14,10 @@ public class Coordenada {
 		//Este es el contructor parametrico de la clase que recibe dos valores enteros
 		x= new Vertice(puntoA,puntoB);
 	}
+	public Vertice getX() {
+		return this.x;
+	}
+	
 	public void mostrar() {
 		System.out.println(x.getPuntoa()+","+x.getPuntob());
 	}
